@@ -4,9 +4,9 @@ const TodaysFoodItem = ({name,quantity,calories,id ,onDelete}) => {
   console.log(onDelete)
 
   return(
-    <li className='mt-3'>
+    <li className=''>
     {`${quantity} ${name} = ${quantity*calories}`}
-      <button className='btn-sm btn-danger ml-3 pt-0 pb-0' onClick={() => onDelete(id)}> - </button>
+      <button className="btn btn-link text-danger" onClick={() => onDelete(id)}><i className="fa fa-times"></i> </button>
     </li>
   )
 }

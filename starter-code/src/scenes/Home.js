@@ -48,8 +48,15 @@ class Home extends Component {
     }
   }
 
-  handleDelete= (foodItem) => {
-
+  handleDelete= (id) => {
+    console.log(id)
+    const deltedTodaysFoodData = this.state.todaysFoodData.reduce((result,e) => {
+      if (e.id !== id) result.push(e)
+      return result
+    },[])
+    this.setState({
+      todaysFoodData : [...deltedTodaysFoodData]
+    })
   }
 
 

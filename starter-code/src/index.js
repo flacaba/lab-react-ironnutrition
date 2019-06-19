@@ -6,6 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 import 'bulma/css/bulma.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'font-awesome/css/font-awesome.min.css'
 
 import { BrowserRouter as Router } from 'react-router-dom'
 

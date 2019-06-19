@@ -9,6 +9,7 @@ foodList.forEach( a => {
 const getList = () => Promise.resolve(foodList)
 
 const addFood = (foodItem) => {
+  foodItem.id = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
   return new Promise((resolve,reject) => {
     foodList = [...foodList,foodItem]
     resolve(foodItem)
